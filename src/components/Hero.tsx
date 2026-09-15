@@ -1,26 +1,20 @@
-import heroImage_350 from "@/assets/hero/nova-hero-350.webp";
-import heroImage_500 from "@/assets/hero/nova-hero-500.webp";
-import heroImage_700 from "@/assets/hero/nova-hero-700.webp";
-import heroImage_1000 from "@/assets/hero/nova-hero-1000.webp";
-import heroImage_1400 from "@/assets/hero/nova-hero-1400.webp";
-import heroImage_1920 from "@/assets/hero/nova-hero-1920.webp";
-
 import { Button } from "@/components/ui/button";
 
 function Hero() {
   return (
     <section className="hero-section" aria-labelledby="hero-title">
       <img
-        src={heroImage_1920}
-        srcSet={`${heroImage_350} 350w, ${heroImage_500} 500w, ${heroImage_700} 700w, ${heroImage_1000} 1000w, ${heroImage_1400} 1400w, ${heroImage_1920} 1920w`}
+        src="/assets/hero/nova-hero-1920.webp"
+        srcSet="/assets/hero/nova-hero-1920.webp 1920w, /assets/hero/nova-hero-1400.webp 1400w, /assets/hero/nova-hero-1000.webp 1000w, /assets/hero/nova-hero-700.webp 700w, /assets/hero/nova-hero-500.webp 500w, /assets/hero/nova-hero-350.webp 350w"
         sizes="100vw"
-        alt="Hero Background"
+        alt=""
         width={1920}
         height={1200}
         fetchPriority="high"
         className="hero-media"
         aria-hidden="true"
       />
+
       <div className="hero-shade" aria-hidden="true" />
       <div className="site-container hero-layout">
         <div className="hero-content">
