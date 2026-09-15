@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Categories from "@/components/Categories";
+import FeaturedProducts from "@/components/FeaturedProducts";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <main id="main">
         <Hero />
         <Categories />
-        {/* <FeaturedProducts /> */}
+        <FeaturedProducts />
         {/* <StoreBenefits /> */}
         {/* <Promotion /> */}
         {/* <ProductShowcase /> */}
