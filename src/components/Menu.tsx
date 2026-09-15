@@ -1,32 +1,34 @@
 import { Button } from "./ui/button";
 
-function Menu() {
-  const navToggleId = "nav-toggle";
-  const links = [
-    "Shop",
-    "Smartphones",
-    "Laptops",
-    "Tablets",
-    "Accessories",
-    "Deals",
-    "About",
-  ];
-  const target = (label: string) =>
-    label === "Deals"
-      ? "promotion"
-      : label === "About"
-        ? "benefits"
-        : label === "Shop"
-          ? "featured"
-          : "categories";
+const links = [
+  "Shop",
+  "Smartphones",
+  "Laptops",
+  "Tablets",
+  "Accessories",
+  "Deals",
+  "About",
+];
 
+const getTarget = (label: string) =>
+  label === "Deals"
+    ? "promotion"
+    : label === "About"
+      ? "benefits"
+      : label === "Shop"
+        ? "featured"
+        : "categories";
+
+const NAV_TOGGLE_ID = "nav-toggle";
+
+function Menu() {
   return (
     <div className="group flex shrink-0 items-center justify-end gap-1">
-      <style>{`body:has(#${navToggleId}:checked){overflow:hidden}`}</style>
+      <style>{`body:has(#${NAV_TOGGLE_ID}:checked){overflow:hidden}`}</style>
 
       <input
         type="checkbox"
-        id={navToggleId}
+        id={NAV_TOGGLE_ID}
         aria-label="Toggle navigation menu"
         className="sr-only"
       />
@@ -49,8 +51,8 @@ function Menu() {
       </Button>
 
       <label
-        htmlFor={navToggleId}
-        aria-hidden="true"
+        htmlFor={NAV_TOGGLE_ID}
+        aria-label="Open navigation menu"
         className="inline-flex size-9 cursor-pointer items-center justify-center rounded-md text-foreground transition-colors hover:bg-muted group-has-focus-visible:outline group-has-focus-visible:outline-ring lg:hidden"
       >
         <svg
@@ -65,16 +67,16 @@ function Menu() {
       </label>
 
       <label
-        htmlFor={navToggleId}
-        aria-hidden="true"
+        htmlFor={NAV_TOGGLE_ID}
+        aria-label="Close navigation menu backdrop"
         className="pointer-events-none fixed inset-0 z-40 bg-foreground/20 opacity-0 transition-opacity duration-420 ease-out group-has-checked:pointer-events-auto group-has-checked:opacity-100 lg:hidden"
       />
 
       <div className="fixed inset-y-0 right-0 z-50 flex h-dvh w-[min(21rem,86%)] translate-x-full flex-col border-l border-border bg-surface shadow-[-16px_0_48px_-24px_oklch(0.2_0_0/0.35)] transition-transform duration-420 ease-[cubic-bezier(0.32,0.72,0,1)] group-has-checked:translate-x-0 lg:hidden">
         <div className="flex h-16 shrink-0 items-center justify-end border-b border-border px-5">
           <label
-            htmlFor={navToggleId}
-            aria-hidden="true"
+            htmlFor={NAV_TOGGLE_ID}
+            aria-label="Close navigation menu"
             className="-mr-2 inline-flex size-9 cursor-pointer items-center justify-center rounded-md text-secondary transition-colors hover:bg-muted hover:text-foreground"
           >
             <svg
@@ -96,7 +98,7 @@ function Menu() {
           {links.map((link, i) => (
             <a
               key={link}
-              href={`#${target(link)}`}
+              href={`#${getTarget(link)}`}
               style={{ "--delay": `${140 + i * 50}ms` } as React.CSSProperties}
               className="flex translate-x-4 items-center justify-between border-b border-border py-4 text-base font-semibold opacity-0 transition-[opacity,transform,color] duration-300 ease-out hover:text-primary group-has-checked:translate-x-0 group-has-checked:opacity-100 group-has-checked:delay-(--delay)"
             >
