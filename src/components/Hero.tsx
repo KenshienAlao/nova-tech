@@ -1,12 +1,20 @@
-import heroImage from "@/assets/nova-hero.webp";
+import heroImage_350 from "@/assets/hero/nova-hero-350.webp";
+import heroImage_500 from "@/assets/hero/nova-hero-500.webp";
+import heroImage_700 from "@/assets/hero/nova-hero-700.webp";
+import heroImage_1000 from "@/assets/hero/nova-hero-1000.webp";
+import heroImage_1400 from "@/assets/hero/nova-hero-1400.webp";
+import heroImage_1920 from "@/assets/hero/nova-hero-1920.webp";
+
 import { Button } from "@/components/ui/button";
 
 function Hero() {
   return (
     <section className="hero-section" aria-labelledby="hero-title">
       <img
-        src={heroImage}
-        alt=""
+        src={heroImage_1920}
+        srcSet={`${heroImage_350} 350w, ${heroImage_500} 500w, ${heroImage_700} 700w, ${heroImage_1000} 1000w, ${heroImage_1400} 1400w, ${heroImage_1920} 1920w`}
+        sizes="100vw"
+        alt="Hero Background"
         width={1920}
         height={1200}
         fetchPriority="high"

@@ -77,7 +77,7 @@ export function MobileMenuDrawer() {
         aria-label="Close navigation menu backdrop"
         className="pointer-events-none fixed inset-0 z-60 bg-black/50 opacity-0 backdrop-blur-[2px] transition-opacity duration-420 ease-out has-[#nav-toggle:checked]:pointer-events-auto has-[#nav-toggle:checked]:opacity-100 lg:hidden [body:has(#nav-toggle:checked)_&]:pointer-events-auto [body:has(#nav-toggle:checked)_&]:opacity-100"
       />
-      
+
       <div className="fixed inset-y-0 right-0 z-70 flex h-dvh w-[min(21rem,86%)] translate-x-full flex-col border-l border-border bg-surface shadow-[-16px_0_48px_-24px_oklch(0.2_0_0/0.35)] transition-transform duration-420 ease-[cubic-bezier(0.32,0.72,0,1)] lg:hidden [body:has(#nav-toggle:checked)_&]:translate-x-0">
         <div className="flex h-16 shrink-0 items-center justify-end border-b border-border px-5">
           <label

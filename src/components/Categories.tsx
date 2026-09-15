@@ -27,6 +27,8 @@ function Categories() {
             >
               <img
                 src={category.image}
+                srcSet={category.imageSrcSet || undefined}
+                sizes="(max-width: 640px) 100vw, 50vw"
                 alt={`${category.name} collection`}
                 width={1200}
                 height={960}
