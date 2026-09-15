@@ -37,7 +37,7 @@ function Header() {
             <img
               src="/favicon.svg"
               className="h-10 w-10"
-              alt="NOVA TECH logo"
+              alt=""
               aria-hidden="true"
               fetchPriority="high"
             />
