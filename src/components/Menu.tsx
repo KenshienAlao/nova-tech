@@ -19,6 +19,13 @@ const getTarget = (label: string) =>
         ? "featured"
         : "categories";
 
+const closeMenu = () => {
+  const toggle = document.getElementById(
+    NAV_TOGGLE_ID,
+  ) as HTMLInputElement | null;
+  if (toggle) toggle.checked = false;
+};
+
 export const NAV_TOGGLE_ID = "nav-toggle";
 
 export function MenuTrigger() {
@@ -65,14 +72,12 @@ export function MobileMenuDrawer() {
     <>
       <style>{`body:has(#${NAV_TOGGLE_ID}:checked){overflow:hidden}`}</style>
 
-      {/* Full viewport backdrop placed outside header */}
       <label
         htmlFor={NAV_TOGGLE_ID}
         aria-label="Close navigation menu backdrop"
         className="pointer-events-none fixed inset-0 z-60 bg-black/50 opacity-0 backdrop-blur-[2px] transition-opacity duration-420 ease-out has-[#nav-toggle:checked]:pointer-events-auto has-[#nav-toggle:checked]:opacity-100 lg:hidden [body:has(#nav-toggle:checked)_&]:pointer-events-auto [body:has(#nav-toggle:checked)_&]:opacity-100"
       />
-
-      {/* Slide-over Drawer with smooth cubic-bezier animation */}
+      
       <div className="fixed inset-y-0 right-0 z-70 flex h-dvh w-[min(21rem,86%)] translate-x-full flex-col border-l border-border bg-surface shadow-[-16px_0_48px_-24px_oklch(0.2_0_0/0.35)] transition-transform duration-420 ease-[cubic-bezier(0.32,0.72,0,1)] lg:hidden [body:has(#nav-toggle:checked)_&]:translate-x-0">
         <div className="flex h-16 shrink-0 items-center justify-end border-b border-border px-5">
           <label
@@ -100,6 +105,7 @@ export function MobileMenuDrawer() {
             <a
               key={link}
               href={`#${getTarget(link)}`}
+              onClick={closeMenu}
               style={{ "--delay": `${140 + i * 50}ms` } as React.CSSProperties}
               className="flex translate-x-4 items-center justify-between border-b border-border py-4 text-base font-semibold opacity-0 transition-[opacity,transform,color] duration-300 ease-out hover:text-primary [body:has(#nav-toggle:checked)_&]:translate-x-0 [body:has(#nav-toggle:checked)_&]:opacity-100 [body:has(#nav-toggle:checked)_&]:delay-(--delay)"
             >
@@ -121,6 +127,7 @@ export function MobileMenuDrawer() {
         <div className="shrink-0 border-t border-border px-5 py-5 pb-[max(1.25rem,env(safe-area-inset-bottom,0px))]">
           <a
             href="#account"
+            onClick={closeMenu}
             className="flex items-center gap-2.5 text-sm font-semibold text-secondary transition-colors hover:text-foreground"
           >
             <svg
