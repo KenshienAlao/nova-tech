@@ -1,4 +1,4 @@
-import { categories } from "@/data/products";
+import { categories } from "@/data/category";
 
 function Categories() {
   return (
