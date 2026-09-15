@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Categories from "@/components/Categories";
 import FeaturedProducts from "@/components/FeaturedProducts";
+import StoreBenefits from "@/components/StoreBenefits";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Hero />
         <Categories />
         <FeaturedProducts />
-        {/* <StoreBenefits /> */}
+        <StoreBenefits />
         {/* <Promotion /> */}
         {/* <ProductShowcase /> */}
         {/* <Newsletter /> */}
