@@ -1,4 +1,4 @@
-import Menu from "./Menu";
+import Menu, { MobileMenuDrawer, NAV_TOGGLE_ID } from "./Menu";
 
 const links = [
   "Shop",
@@ -21,7 +21,13 @@ const target = (label: string) =>
 function Header() {
   return (
     <>
-      <header className="sticky top-0 z-40 border-b border-border/80 bg-background/95 backdrop-blur">
+      <input
+        type="checkbox"
+        id={NAV_TOGGLE_ID}
+        aria-label="Toggle navigation menu"
+        className="fixed pointer-events-none opacity-0"
+      />
+      <header className="sticky top-0 z-50 border-b border-border/80 bg-background/95 backdrop-blur">
         <div className="site-container grid h-16 grid-cols-[minmax(0,1fr)_auto] items-center gap-3 lg:flex">
           <a
             href="#main"
@@ -52,6 +58,8 @@ function Header() {
           <Menu />
         </div>
       </header>
+
+      <MobileMenuDrawer />
     </>
   );
 }
