@@ -17,13 +17,13 @@ function StoreInfo() {
             guidance from our team in-store.
           </p>
 
-          <dl className="mt-10 space-y-6">
-            <div className="info-row">
+          <ul className="mt-10 space-y-6">
+            <li className="info-row">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                height="24px"
+                height="24"
                 viewBox="0 -960 960 960"
-                width="24px"
+                width="24"
                 fill="currentColor"
                 aria-hidden="true"
               >
@@ -31,21 +31,21 @@ function StoreInfo() {
               </svg>
 
               <div>
-                <dt>Store hours</dt>
-                <dd>
+                <p className="info-label">Store hours</p>
+                <p className="info-value">
                   Monday – Saturday
                   <br />
                   10:00 AM – 8:00 PM
-                </dd>
+                </p>
               </div>
-            </div>
+            </li>
 
-            <div className="info-row">
+            <li className="info-row">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                height="24px"
+                height="24"
                 viewBox="0 -960 960 960"
-                width="24px"
+                width="24"
                 fill="currentColor"
                 aria-hidden="true"
               >
@@ -53,21 +53,21 @@ function StoreInfo() {
               </svg>
 
               <div>
-                <dt>Store location</dt>
-                <dd>
+                <p className="info-label">Store location</p>
+                <p className="info-value">
                   24 Nova Avenue
                   <br />
                   Central District
-                </dd>
+                </p>
               </div>
-            </div>
+            </li>
 
-            <div className="info-row">
+            <li className="info-row">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                height="24px"
+                height="24"
                 viewBox="0 -960 960 960"
-                width="24px"
+                width="24"
                 fill="currentColor"
                 aria-hidden="true"
               >
@@ -75,18 +75,18 @@ function StoreInfo() {
               </svg>
 
               <div>
-                <dt>Get in touch</dt>
-                <dd>
+                <p className="info-label">Get in touch</p>
+                <p className="info-value">
                   <a
                     href="mailto:hello@novatech.example"
                     className="transition-colors hover:text-foreground"
                   >
                     hello@novatech.example
                   </a>
-                </dd>
+                </p>
               </div>
-            </div>
-          </dl>
+            </li>
+          </ul>
         </div>
 
         <div
