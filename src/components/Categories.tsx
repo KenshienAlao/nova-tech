@@ -28,7 +28,11 @@ function Categories() {
               <img
                 src={category.image}
                 srcSet={category.imageSrcSet || undefined}
-                sizes="(max-width: 640px) 100vw, 50vw"
+                sizes={
+                  index < 2
+                    ? "(max-width: 767px) 100vw, calc(50vw - 0.5rem)"
+                    : "(max-width: 767px) 100vw, calc(25vw - 0.75rem)"
+                }
                 alt={`${category.name} collection`}
                 width={1200}
                 height={960}

@@ -4,6 +4,7 @@ import Categories from "@/components/Categories";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import StoreBenefits from "@/components/StoreBenefits";
 import Promotion from "@/components/Promotion";
+import ProductShowcase from "@/components/ProjectShowcase";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <FeaturedProducts />
         <StoreBenefits />
         <Promotion />
-        {/* <ProductShowcase /> */}
+        <ProductShowcase />
         {/* <Newsletter /> */}
         {/* <Testimonials /> */}
         {/* <StoreInfo /> */}
