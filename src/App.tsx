@@ -8,6 +8,7 @@ import ProductShowcase from "@/components/ProjectShowcase";
 import Newsletter from "@/components/Newsletter";
 import Testimonials from "@/components/Testimonials";
 import StoreInfo from "@/components/StoreInfo";
+import FAQ from "@/components/FAQ";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         <Newsletter />
         <Testimonials />
         <StoreInfo />
-        {/* <FAQ /> */}
+        <FAQ />
         {/* <FinalCTA /> */}
       </main>
       {/* <Footer /> */}
