@@ -7,6 +7,7 @@ import Promotion from "@/components/Promotion";
 import ProductShowcase from "@/components/ProjectShowcase";
 import Newsletter from "@/components/Newsletter";
 import Testimonials from "@/components/Testimonials";
+import StoreInfo from "@/components/StoreInfo";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <ProductShowcase />
         <Newsletter />
         <Testimonials />
-        {/* <StoreInfo /> */}
+        <StoreInfo />
         {/* <FAQ /> */}
         {/* <FinalCTA /> */}
       </main>
