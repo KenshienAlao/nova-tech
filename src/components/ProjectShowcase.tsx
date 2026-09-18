@@ -19,7 +19,7 @@ function ProductShowcase() {
     >
       <div className="site-container">
         <div className="max-w-2xl">
-          <p className="eyebrow text-background/60">One ecosystem, your way</p>
+          <p className="eyebrow text-background/80">One ecosystem, your way</p>
           <h2 id="showcase-title" className="mt-4">
             Built for every part of your day.
           </h2>
@@ -42,9 +42,11 @@ function ProductShowcase() {
                 key={title}
                 className="border-b border-r border-background/20 p-5 sm:p-7"
               >
-                <p className="text-xs text-background/45">{number}</p>
+                <p className="text-xs font-semibold text-background/75">
+                  {number}
+                </p>
                 <h3 className="mt-8 text-2xl font-medium">{title}</h3>
-                <p className="mt-2 text-sm leading-6 text-background/60">
+                <p className="mt-2 text-sm leading-6 text-background/80">
                   {items}
                 </p>
               </article>

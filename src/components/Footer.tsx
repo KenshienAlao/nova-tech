@@ -25,11 +25,11 @@ function Footer() {
               <span>NOVA TECH</span>
             </a>
 
-            <p className="mt-5 text-sm leading-6 text-background/55">
+            <p className="mt-5 text-sm leading-6 text-background/75">
               Technology for the way you live.
             </p>
 
-            <p className="mt-3 text-sm leading-6 text-background/45">
+            <p className="mt-3 text-sm leading-6 text-background/70">
               Thoughtfully selected devices and technology for work, creativity,
               and everyday life.
             </p>
@@ -38,7 +38,7 @@ function Footer() {
           <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3">
             {Object.entries(columns).map(([title, links]) => (
               <nav key={title} aria-label={title}>
-                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-background/45">
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-background/70">
                   {title}
                 </p>
 
@@ -59,7 +59,7 @@ function Footer() {
                                     ? "#store"
                                     : "#main"
                         }
-                        className="text-sm text-background/70 transition-colors hover:text-background"
+                        className="text-sm text-background/80 transition-colors hover:text-background"
                       >
                         {link}
                       </a>
@@ -71,7 +71,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-5 py-6 text-xs text-background/40 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-5 py-6 text-xs text-background/70 sm:flex-row sm:items-center sm:justify-between">
           <p>
             &copy; 2026 Nova Tech. Fictional business created for portfolio
             purposes.
@@ -80,13 +80,13 @@ function Footer() {
           <div className="flex gap-5">
             <a
               href="#main"
-              className="transition-colors hover:text-background/70"
+              className="text-background/70 transition-colors hover:text-background"
             >
               Privacy
             </a>
             <a
               href="#main"
-              className="transition-colors hover:text-background/70"
+              className="text-background/70 transition-colors hover:text-background"
             >
               Terms
             </a>

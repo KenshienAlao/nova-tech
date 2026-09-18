@@ -9,9 +9,9 @@ function Newsletter() {
     >
       <div className="site-container grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-end">
         <div>
-          <p className="eyebrow text-accent-foreground/65">The NOVA edit</p>
+          <p className="eyebrow text-accent-foreground/90">The NOVA edit</p>
           <h2 className="mt-4 max-w-xl">Stay ahead of what’s next.</h2>
-          <p className="mt-4 max-w-xl text-accent-foreground/75">
+          <p className="mt-4 max-w-xl text-accent-foreground/90">
             Get product launches, useful technology picks, and selected offers
             in your inbox.
           </p>
