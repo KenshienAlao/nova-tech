@@ -5,6 +5,7 @@ import FeaturedProducts from "@/components/FeaturedProducts";
 import StoreBenefits from "@/components/StoreBenefits";
 import Promotion from "@/components/Promotion";
 import ProductShowcase from "@/components/ProjectShowcase";
+import Newsletter from "@/components/Newsletter";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <StoreBenefits />
         <Promotion />
         <ProductShowcase />
-        {/* <Newsletter /> */}
+        <Newsletter />
         {/* <Testimonials /> */}
         {/* <StoreInfo /> */}
         {/* <FAQ /> */}
