@@ -9,6 +9,7 @@ import Newsletter from "@/components/Newsletter";
 import Testimonials from "@/components/Testimonials";
 import StoreInfo from "@/components/StoreInfo";
 import FAQ from "@/components/FAQ";
+import { FinalCTA } from "@/components/FinalCTA";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
         <Testimonials />
         <StoreInfo />
         <FAQ />
-        {/* <FinalCTA /> */}
+        <FinalCTA />
       </main>
       {/* <Footer /> */}
     </>
