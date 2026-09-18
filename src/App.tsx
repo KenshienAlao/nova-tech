@@ -9,7 +9,8 @@ import Newsletter from "@/components/Newsletter";
 import Testimonials from "@/components/Testimonials";
 import StoreInfo from "@/components/StoreInfo";
 import FAQ from "@/components/FAQ";
-import { FinalCTA } from "@/components/FinalCTA";
+import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
         <FAQ />
         <FinalCTA />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
