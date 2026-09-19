@@ -6,13 +6,7 @@ interface AccordionProps extends React.HTMLAttributes<HTMLDivElement> {
   collapsible?: boolean;
 }
 
-const Accordion = ({
-  children,
-  className,
-  type: _type,
-  collapsible: _collapsible,
-  ...props
-}: AccordionProps) => (
+const Accordion = ({ children, className, ...props }: AccordionProps) => (
   <div className={cn("divide-y divide-border", className)} {...props}>
     {children}
   </div>
@@ -25,7 +19,6 @@ interface AccordionItemProps extends React.DetailsHTMLAttributes<HTMLDetailsElem
 const AccordionItem = ({
   children,
   className,
-  value: _value,
   ...props
 }: AccordionItemProps) => (
   <details
