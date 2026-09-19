@@ -11,8 +11,25 @@ import StoreInfo from "@/components/StoreInfo";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import { useEffect, useState } from "react";
+import isKnownRoute from "@/lib/known-route";
+import NotFound from "@/components/NotFound";
 
 function App() {
+  const [isHome, setIsHome] = useState(isKnownRoute);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      setIsHome(isKnownRoute());
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
+  if (!isHome) {
+    return <NotFound />;
+  }
+
   return (
     <>
       <a href="#main" className="skip-link">
