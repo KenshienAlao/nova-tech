@@ -20,6 +20,7 @@ function Promotion() {
           <img
             src={novaPromo_1400}
             srcSet={promoImageSrcSet}
+            sizes="(min-width: 1344px) 1312px, calc(100vw - 2rem)"
             alt="Laptop, tablet, smartphone, headphones and smartwatch in a studio arrangement"
             width={1400}
             height={787}

@@ -8,6 +8,7 @@ function ProductCard({ product }: { product: Product }) {
         <img
           src={product.image}
           srcSet={product.imageSrcSet}
+          sizes="(min-width: 1344px) 420px, (min-width: 1024px) 31vw, (min-width: 640px) 48vw, calc(100vw - 2rem)"
           alt={product.name}
           width={1200}
           height={960}

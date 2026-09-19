@@ -15,7 +15,7 @@ function FinalCTA() {
           <img
             src={ctaImage_1400}
             srcSet={ctaImageSrcSet}
-            sizes="(max-width: 1023px) 100vw, 82rem"
+            sizes="(min-width: 1344px) 1312px, calc(100vw - 2rem)"
             alt="NOVA TECH collection of everyday technology"
             width={1400}
             height={784}

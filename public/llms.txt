@@ -1,0 +1,24 @@
+# Nova Tech
+
+> Technology for the way you live.
+
+Nova Tech is a fictional technology retailer landing page created as a frontend development portfolio project. It showcases smartphones, laptops, tablets, audio devices, wearables, and accessories through a modern retail experience.
+
+## Products
+
+- [Featured Products](/#featured): Explore selected Nova Tech devices and technology products.
+- [Product Categories](/#categories): Browse smartphones, laptops, tablets, audio, wearables, and accessories.
+- [Deals](/#promotion): View current promotions and selected technology offers.
+
+## Store
+
+- [Visit Nova Tech](/#store): Store location, opening hours, and contact information.
+- [FAQ](/#faq): Frequently asked questions about products, shopping, and support.
+
+## Brand
+
+Nova Tech focuses on thoughtfully selected technology designed for work, creativity, entertainment, and everyday life.
+
+## Project
+
+This is a fictional portfolio project created to demonstrate frontend development, responsive design, UI/UX, accessibility, and performance optimization.

@@ -11,7 +11,7 @@ function StoreInfo() {
           <h2 id="store-title" className="mt-4">
             Experience Nova Tech in person.
           </h2>
-
+1
           <p className="mt-5 leading-7 text-secondary">
             Explore our latest technology, compare devices, and get practical
             guidance from our team in-store.
@@ -89,10 +89,7 @@ function StoreInfo() {
           </ul>
         </div>
 
-        <div
-          className="map-visual"
-          aria-label="Map showing NOVA TECH in Central District"
-        >
+        <div className="map-visual">
           <iframe
             src={MAP_EMBED_SRC}
             title="Map of NOVA TECH store location in Central District"
